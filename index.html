@@ -20,9 +20,36 @@
     <br />
     <br />
     <br />
+    <!-- option 3: get Element by Id and then set "onclick" -->
     <button id="btn-make-blue">Make blue</button>
     <button id="btn-make-purple">Make purple</button>
-    <script></script>
+
+    <!-- option 4: addEventListener -->
+    <button id="btn-make-green">Make green</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <button id="btn-make-gold">Make Gold</button>
+    <script>
+      // getElementById().addEventListener('event type', handler)
+      // document
+      //   .getElementById("btn-make-green")
+      //   .addEventListener("click", function makeGreen() {});
+      document
+        .getElementById("btn-make-green")
+        .addEventListener("click", function makeGreen() {
+          // console.log(77777);
+          document.body.style.backgroundColor = "lightgreen";
+        });
+
+      document
+        .getElementById("btn-make-gold")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "goldenrod";
+        });
+    </script>
     <script src="./js/events.js"></script>
   </body>
 </html>
