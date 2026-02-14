@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event handler</title>
+  </head>
+  <body>
+    <h1 id="page-title">envet handler</h1>
+    <button id="btn-update-title">update title</button>
+    <br>
+    <br>
+    <p id="user-info">No User</p>
+    <button id="btn-login">Login</button>
+    <br> <br> <br>
+    <!-- handle input text -->
+     <p id="updated-name">No name</p>
+     <input id="inp-name" placeholder="Enter Your Name" type="text" name="" id="">
+    <button id="btn-update">Update</button>
+    <script>
+      document.getElementById('btn-update')
+      .addEventListener('click', function(){
+        // console.log('object');
+        const nameInp = document.getElementById('inp-name')
+        // console.log(nameInp);
+        const name = nameInp.value;
+        const nameP = document.getElementById('updated-name')
+        nameP.innerText = name;
+
+      })
+    </script>
+    <script src="./handler.js"></script>
+  </body>
+</html>
